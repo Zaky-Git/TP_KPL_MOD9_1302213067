@@ -36,9 +36,9 @@ namespace tpmodul9_1302213067.Controllers
 
 
         [HttpPost]
-        public void Post([FromBody] Mahasiswa value)
+        public void Post(Mahasiswa dataBaru)
         {
-            ListMahasiswa.Add(value);
+            ListMahasiswa.Add(dataBaru);
         }
 
         [HttpDelete("{id}")]
